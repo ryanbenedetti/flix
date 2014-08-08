@@ -1,0 +1,32 @@
+<h1>Movies</h1>
+
+<ul>
+  <% @movies.each do |movie|  %>
+    <li> <strong><%= movie.title %> </strong>
+		(<%= movie.rating %>):
+		<%= number_to_currency(movie.total_gross) %> 	
+	</li>
+  <% end %>
+</ul>
+
+
+
+<!-- 
+<ul>
+	<li>Guardians of the Galaxy</li>
+	<li>Thor: The Dark World</li>
+	<li>The Avengers</li>
+</ul>
+-->
+
+<!-- a list of movies from the instance variable in movies_controller.rb
+<%= @movies %>
+-->
+
+<!-- iterate over each member in the @movies array
+<ul>
+  <% @movies.each do |movie|  %>
+    <li> <%= movie %> </li>
+  <% end %>
+</ul>
+-->
