@@ -1,5 +1,6 @@
 class MoviesController < ApplicationController
   def index
+    #to test for pluralize @movies = Movie.limit(1)
    @movies = Movie.all
   end
 end
